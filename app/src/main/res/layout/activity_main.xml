@@ -7,7 +7,7 @@
              tools:ignore="MergeRootFrame">
 
     <fragment
-            class="com.oos.CS4773.socketio.FrontEnd.Chat.MainFragment"
+            class="com.trungdinh.mybanking.Chat.MainFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 </FrameLayout>

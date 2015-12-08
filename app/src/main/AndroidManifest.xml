@@ -1,41 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.oos.CS4773.socketio.FrontEnd" >
+    package="com.trungdinh.mybanking">
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
         <activity
-            android:name="com.oos.CS4773.socketio.FrontEnd.LoginActivity"
-            android:label="@string/app_name" >
+            android:name=".banking"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.oos.CS4773.socketio.FrontEnd.RegisterActivity"
-            android:label="Node Reister">
-
-        </activity>
         <activity
-            android:name="com.oos.CS4773.socketio.FrontEnd.Chat.ChatActivityMain"
-            android:label="@string/app_name" >
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        </activity>
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.oos.CS4773.socketio.FrontEnd.Chat.JoinActivitiy"
+            android:name=".MainAccess"
+            android:label="@string/title_activity_main_access"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterSuccess"
+            android:label="@string/title_activity_register_success"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ForgetPassword"
+            android:label="@string/title_activity_forget_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ResetPassSuccess"
+            android:label="@string/title_activity_reset_pass_success"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserProfile"
+            android:label="@string/title_activity_user_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AccountDetail"
+            android:label="@string/title_activity_account_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Message"
+            android:label="@string/title_activity_message"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CreateMessage"
+            android:label="@string/title_activity_create_message"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListMessage"
+            android:label="@string/title_activity_list_message"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Chat.JoinActivitiy"
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.AppCompat"
-            android:windowSoftInputMode="adjustResize|stateVisible" >
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity
+            android:name=".Chat.ChatActivityMain"
+            android:label="@string/app_name">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Node Reister" />
+        <activity
+            android:name=".DetailMessage"
+            android:label="@string/title_activity_detail_message"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".policy"
+            android:label="@string/title_activity_policy"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

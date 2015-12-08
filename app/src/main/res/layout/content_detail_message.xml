@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:columnCount="2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.trungdinh.mybanking.DetailMessage"
+    tools:showIn="@layout/activity_detail_message">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:id="@+id/toEmail"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:textSize="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_columnSpan="2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:id="@+id/subject"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:textSize="20dp"
+        android:layout_columnSpan="2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/message"
+        android:text="okay sdjhf jkshdfj kashdf jkahskjdf akjshf jksadf kjahsdj fakjdfakshdf "
+        android:layout_row="3"
+        android:layout_column="0"
+        android:textSize="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_columnSpan="2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_row="0"
+        android:onClick="onDelete"
+        android:layout_column="0"
+        android:layout_gravity="clip_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:layout_row="0"
+        android:onClick="onBackMessage"
+        android:layout_column="1"
+        android:layout_gravity="clip_horizontal" />
+
+
+</GridLayout>

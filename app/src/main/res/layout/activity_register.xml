@@ -12,29 +12,29 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:id="@+id/email"
-        android:layout_marginTop="50dp"
-        android:hint="example@mail.com"/>
-
-    <EditText
-        android:id="@+id/ID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:inputType="number"
-        android:hint="ID"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/email"
+            android:layout_marginTop="50dp"
+            android:hint="example@mail.com"/>
 
         <EditText
-        android:id="@+id/name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:inputType="textPersonName"
-        android:hint="Name"/>
+            android:id="@+id/ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:hint="ID"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textPersonName"
+            android:hint="Name"/>
         <EditText
             android:id="@+id/ssn"
             android:layout_width="match_parent"
@@ -42,26 +42,26 @@
             android:layout_gravity="center"
             android:inputType="number"
             android:hint="SSN"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:id="@+id/registerbtn"
-        android:layout_gravity="center"
-        android:background="@drawable/btn_back"
-        android:textColor="#ffffff"
-        android:textAlignment="center"
-        android:text="Register"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:id="@+id/login"
-        android:layout_gravity="center"
-        android:background="@drawable/btn_blue_back"
-        android:textColor="#ffffff"
-        android:textAlignment="center"
-        android:text="Login Now"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/registerbtn"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_back"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:text="Register"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/login"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_blue_back"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:text="Login Now"/>
 
     </LinearLayout>
 

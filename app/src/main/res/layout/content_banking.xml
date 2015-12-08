@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".banking">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:orientation="vertical">
+
+
+        <TextView
+        android:text="Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userView"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userText"
+        android:layout_marginLeft="10dp"
+
+        android:layout_toRightOf="@+id/userView"
+        android:hint="Enter Username"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/userView" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userError"
+        android:layout_toRightOf="@+id/userText"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/userView"
+        android:layout_margin="10dp"
+        android:textColor="#db0707" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/passView"
+        android:layout_alignLeft="@+id/userView"
+        android:layout_marginTop="12dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/userView"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passText"
+        android:hint="Enter Password"
+        android:textSize="20dp"
+        android:layout_alignLeft="@+id/userText"
+        android:layout_toRightOf="@+id/passView"
+        android:layout_alignBottom="@+id/passView"/>
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passError"
+        android:layout_toRightOf="@+id/passText"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/passView"
+        android:layout_margin="10dp"
+        android:textColor="#db0707" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/login"
+        android:onClick="onLogin"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/userView"
+        android:layout_below="@+id/passView"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/register"
+        android:onClick="onRegister"
+        android:layout_below="@+id/login"
+        android:layout_alignLeft="@+id/userView"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:id="@+id/test"
+        android:onClick="onForgotPassword"
+        android:layout_below="@+id/register"
+        android:layout_alignLeft="@+id/userView"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:onClick="onPolicy"
+        android:layout_below="@+id/test"
+        android:layout_alignLeft="@+id/userView"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/notice"
+        android:layout_below="@+id/test"
+        android:layout_marginTop="15dp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

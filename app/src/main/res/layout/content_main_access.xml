@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:columnCount="3"
+    tools:showIn="@layout/activity_main_access" tools:context="com.trungdinh.mybanking.MainAccess">
+
+
+    <Space
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:layout_row="0"
+        android:layout_column="0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mortgage"
+        android:onClick="onMorgage"
+        android:id="@+id/mortgage"
+        android:layout_row="1"
+        android:layout_column="0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checking"
+        android:onClick="onChecking"
+        android:id="@+id/checking"
+        android:layout_row="1"
+        android:layout_column="1" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saving"
+        android:onClick="onSaving"
+        android:id="@+id/saving"
+        android:layout_row="1"
+        android:layout_column="2" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:id="@+id/button4"
+        android:layout_row="2"
+        android:onClick="onProfile"
+        android:layout_column="0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogOut"
+        android:id="@+id/button"
+        android:layout_row="2"
+        android:onClick="onLogOut"
+        android:layout_column="1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:id="@+id/button10"
+        android:onClick="onMessage"
+        android:layout_row="2"
+        android:layout_column="2" />
+
+    <!--EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailText"
+        android:hint="New Email"
+        android:layout_row="3"
+        android:layout_column="0" /-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS"
+        android:id="@+id/gps"
+        android:onClick="getGPS"
+        android:layout_row="3"
+        android:layout_column="0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone #"
+        android:id="@+id/button11"
+        android:onClick="getPhoneNumber"
+        android:layout_row="3"
+        android:layout_column="1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live Chat"
+        android:id="@+id/button8"
+        android:layout_row="3"
+        android:onClick="onLiveChat"
+        android:layout_column="2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMEI"
+        android:id="@+id/button12"
+        android:onClick="getIMEI"
+        android:layout_row="4"
+        android:layout_column="0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP add"
+        android:id="@+id/button13"
+        android:onClick="getIP"
+        android:layout_row="4"
+        android:layout_column="1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pri-Email"
+        android:id="@+id/button14"
+        android:onClick="getEmail"
+        android:layout_row="4"
+        android:layout_column="2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passText"
+        android:hint="New Password"
+        android:layout_row="6"
+        android:layout_column="0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:id="@+id/button7"
+        android:onClick="changePassword"
+        android:layout_row="6"
+        android:layout_column="1"
+        android:layout_columnSpan="2"/>
+
+</GridLayout>
